@@ -1,0 +1,217 @@
+.background-theme {
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/Beach_Background-885.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.player {
+    background-color: rgba(32, 109, 145, 0.932);
+    /* background-color: rgb(179, 203, 214); */
+    height: 60%;
+    width:20%;
+    min-width: 250px;
+    border-radius: 8px;
+    position: relative;
+}
+.player-screen {
+    width:90%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.637);
+    margin: auto;
+    margin-top: 13px;
+    position: relative;
+}
+.player-buttons-container {
+    height: 60%;
+}
+.player-buttons {
+    height: 55%;
+    width: 90%;
+    margin: auto;
+    margin-top:20%;
+    background-color: aliceblue;
+    border-radius: 8px;
+    display: flex;
+    box-shadow: 0.5px 0.5px 0.5px 1px rgba(125, 129, 133, 0.185);
+}
+.prev-button{
+    width:25%;
+    border-right: 1px solid rgba(130, 142, 145, 0.438);
+    position:relative;
+}
+.prev-button:hover {
+    background-color: rgb(229, 239, 248);
+    cursor: pointer;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.center-buttons{
+    width:50%;
+}
+.next-button{
+    width:25%;
+    border-left: 1px solid rgba(130, 142, 145, 0.438);
+    position: relative;
+}
+.next-button:hover {
+    background-color: rgb(229, 239, 248);
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.up-button {
+    position: relative;
+    height:23%;
+}
+.up-button:hover, .down-button:hover, .play-pause-button:hover {
+    background-color: rgb(229, 239, 248);
+    cursor: pointer;
+}
+.play-pause-button {
+    position: relative;
+    height:52%;
+    border-bottom: 1px solid rgba(130, 142, 145, 0.438);
+    border-top: 1px solid rgba(130, 142, 145, 0.438);
+}
+.down-button {
+    height:23%;
+    position: relative;
+}
+.up-icon {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(130, 142, 145, 0.938);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.down-icon {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(130, 142, 145, 0.938);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.next-icon {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgba(130, 142, 145, 0.938); 
+    position: absolute;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%,-50%); 
+}
+.prev-icon {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;  
+    border-right:10px solid rgba(130, 142, 145, 0.938); 
+    position: absolute;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%,-50%); 
+}
+
+.play-pause-icon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.box{
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 12px 0px 12px 22px;
+  border-color: transparent transparent transparent rgba(105, 115, 117, 0.938);
+  transition: all 100ms ease-in-out;
+}
+
+.pause{
+  border-style: double;
+  border-width:0px 0px 0px 20px;
+}
+.playlist, #song-display{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    height: 94%;
+    width:94%;
+    background-color: rgba(0, 0, 0, 0.589);
+}
+ul {
+    padding:2% 3%;
+    margin: 0;
+}
+.song {
+    padding: 1% 0;
+    list-style-type: none;
+    color:white;
+}
+.active {
+    background-color: grey;
+}
+.hidden {
+    display: none;
+}
+#song-display{
+    height: 100%;
+    width:100%;
+}
+.album-photo{
+    height:60%;
+    width:60%;
+    position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.song-title{
+    padding-top:1%;
+    color:white;
+    text-align: center;
+    font-size: 2.5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.singer{
+    color:white;
+    text-align: center;
+    font-size: 1.8vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.return-btn{
+    position:absolute;
+    left:5%;
+    top:48%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 0.5px 1px rgba(125, 129, 133, 0.185);
+    height:28px;
+    width:28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.return-btn i{
+    color:rgb(113 123 125);
+}
